@@ -1,0 +1,18 @@
+<center>
+
+  <div class="card" style="width: 18rem;">
+    <div class="card-body">
+      <h5 class="card-title">Show book</h5>
+      <h6 class="card-subtitle mb-2 text-muted"><%= @ebook.book_name %></h6>
+      <p class="card-text"><%= @ebook.description %></p>
+      <p class="card-text"><%= @ebook.author_name %></p>
+      <p class="card-text"><%= @ebook.rate %></p>
+      <p class="card-text"><%= @ebook.publish_year %></p>
+      <%= link_to 'Back', { controller: 'ebooks', action: 'index'},class:"btn btn-primary" %>
+      <%= link_to 'Edit', edit_ebook_path(@ebook),class:"btn btn-primary" %>
+    </div>
+  </div>
+
+  </div>
+</center>
+

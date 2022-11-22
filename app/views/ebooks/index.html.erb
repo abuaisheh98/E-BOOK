@@ -22,7 +22,7 @@
             <%= link_to 'Show', book ,class:"btn btn-outline-success"%>
         </td>
         <td><%= link_to 'Edit', edit_ebook_path(book),class:"btn btn-primary" %></td>
-        <td><%= button_to 'Delete', book, method: :delete,class:"btn btn-outline-danger" %></td>
+        <td><%= link_to 'Delete', book, data: { "turbo-method": :delete },class:"btn btn-outline-danger" %></td>
       </tr>
     <% end %>
     </tbody>

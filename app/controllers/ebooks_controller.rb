@@ -2,7 +2,7 @@ class EbooksController < ApplicationController
   before_action :set_ebook, only: [:show, :edit, :update, :destroy]
 
   def index
-    @ebooks = Ebook.all
+    @ebooks = Ebook.book_name.excellent
   end
 
   def new
